@@ -27,12 +27,31 @@
       width: 100%; 
      }
   }
+  @media screen and(max-width:620px) {
+    
+    .content-title-position{
+      width: 100%;
+    }
+   
+  }
+  @media screen and(max-width:550px) {
+    .title-my-name {
+      font-size: 50px;
+      padding: 15px;
+      
+    }
 
-  // @media screen and(max-width:626px) {
-  //   .my-card-2 {
-  //     width: 100%;
-  //   }
-  // }
+    .content-title-position .title-position {
+      font-size: 20px;
+    }
+   
+    footer .container-footer .footer-body {
+      .redes-sociales {
+       
+        flex-wrap: wrap;
+      }
+    }
+  }
 
   @media screen and (max-width:378px){
     footer .container-footer .footer-body {
@@ -43,4 +62,6 @@
       // justify-content: center;
       // align-items: center;
     }
+
+
   }

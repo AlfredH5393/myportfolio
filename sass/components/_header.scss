@@ -95,22 +95,26 @@ header::before{
 
 .title-my-name{
     display: block;
-    margin:auto;
+  
     text-align: center;
     margin-top: 10%;
     line-height: 100px;
     font-size: 80px;
     color: #fff;
 }
-.title-position{
+.content-title-position {
+    width: 40%;
     margin: 0 auto;
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-    padding:15px;
+    padding:10px;
     background: rgba(0,0,0, 0.8);
-    width: 50%;
+
+    .title-position{
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+    }
 }
+
 
 header .line{
     width: 600px;
