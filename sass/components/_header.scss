@@ -1,0 +1,124 @@
+header{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+    
+   .content-button {
+       float: right;
+ 
+       .btn-hambuger {
+        position: relative;
+        border: none;
+        color: #fff;
+        background: none;
+        margin: 20px;
+        z-index: 1;
+       }
+
+       .btn-hambuger:hover {
+           color: white;
+       }
+   }
+}
+header::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: #fff;
+    clip-path: polygon(100% 50%, 0 100%, 100% 100%);
+}
+
+// header nav{
+//      float: right;
+//      line-height: 20px;
+// }
+
+// header nav a{
+//     display: inline-block;
+//     margin: 8px;
+//     text-decoration: none;
+//     padding: 8px 20px;
+//     color: white;
+//     transition: .2s ease-in-out;
+// }
+
+// header nav a:hover {
+//     border-radius: 20px;
+//     background: #fff;
+//     color: #000000;
+//     text-decoration: none;
+    
+// }
+
+.full-menu {
+    background:#222f3e;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    ul li {
+        list-style: none;
+        text-align: center;
+        margin-top: 20px;
+        a {
+            
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 2;
+            padding: 8px 20px;
+            transition: .2s ease-in-out; border-bottom: 2px solid #ff7f50;
+        }
+        a:hover {
+            border-bottom: none;
+            border-radius: 20px;
+            background: #ff7f50;
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.title-my-name{
+    display: block;
+    margin:auto;
+    text-align: center;
+    margin-top: 10%;
+    line-height: 100px;
+    font-size: 80px;
+    color: #fff;
+}
+.title-position{
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding:15px;
+    background: rgba(0,0,0, 0.8);
+    width: 50%;
+}
+
+header .line{
+    width: 600px;
+    margin: auto;
+    height: 4.5px;
+    background: #00a8ff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

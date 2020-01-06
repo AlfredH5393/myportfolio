@@ -1,0 +1,46 @@
+/*---------------------Responsive----------------------------------*/
+/*Parrafos de texto*/
+@media screen and (max-width:1200px){
+    .sect-about .row .col-auto .text-about{
+        width: 100%;
+    }
+  }
+
+  
+  @media screen and (max-width:800px) {
+    .my-card-2 {
+     width: 45%; 
+    }
+  }
+
+  @media screen and (max-width:767px){
+    .my-card {
+        width: 100%;
+        margin: 0 auto;
+      }
+     
+    .skill-box{
+        width: 100%;
+    }
+
+    .my-card-2 {
+      width: 100%; 
+     }
+  }
+
+  // @media screen and(max-width:626px) {
+  //   .my-card-2 {
+  //     width: 100%;
+  //   }
+  // }
+
+  @media screen and (max-width:378px){
+    footer .container-footer .footer-body {
+      // padding: 20px;
+      height: 100%;
+     margin: 0 auto;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+    }
+  }
