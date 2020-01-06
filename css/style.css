@@ -66,21 +66,21 @@ header::before {
 
 .title-my-name {
   display: block;
-  margin: auto;
   text-align: center;
   margin-top: 10%;
   line-height: 100px;
   font-size: 80px;
   color: #fff; }
 
-.title-position {
+.content-title-position {
+  width: 40%;
   margin: 0 auto;
-  text-align: center;
-  color: #fff;
-  font-size: 30px;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.8);
-  width: 50%; }
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8); }
+  .content-title-position .title-position {
+    text-align: center;
+    color: #fff;
+    font-size: 30px; }
 
 header .line {
   width: 600px;
@@ -264,6 +264,9 @@ header .line {
   width: 100%;
   height: 100%; }
 
+.img-login {
+  width: 100%; }
+
 .sect-contact .row .col-auto .contact-content {
   margin: 10px auto;
   width: 520px;
@@ -298,28 +301,36 @@ footer {
   bottom: 0; }
 
 footer .container-footer .footer-body {
-  padding: 20px;
-  height: 150px;
+  padding: 60px 0;
+  height: 200px; }
+
+footer .container-footer .footer-body .redes-sociales {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
+  footer .container-footer .footer-body .redes-sociales a {
+    color: whitesmoke;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    font-size: 20px;
+    /* background: #ccc; */
+    margin: 0 8px; }
 
-footer .container-footer .footer-body ul {
-  list-style: none;
-  width: 350px; }
+footer .container-footer .footer-body .redes-sociales .facebook:hover {
+  background: #3b5998; }
 
-footer .container-footer .footer-body ul li {
-  display: inline-block;
-  margin: auto 28px; }
+footer .container-footer .footer-body .redes-sociales .twitter:hover {
+  background: #1da1f2; }
 
-footer .container-footer .footer-body ul li a {
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  transition: 0.2s ease-in-out; }
+footer .container-footer .footer-body .redes-sociales .linkedin:hover {
+  background: #0077b5; }
 
-footer .container-footer .footer-body ul li a:hover {
-  color: #ff7f50; }
+footer .container-footer .footer-body .redes-sociales .instagram:hover {
+  background: #e1306c; }
+
+footer .container-footer .footer-body .redes-sociales .github:hover {
+  background: #333; }
 
 footer .container-footer .footer-pie {
   padding: 2px;
@@ -349,6 +360,19 @@ footer .container-footer .footer-pie p {
     width: 100%; }
   .my-card-2 {
     width: 100%; } }
+
+@media screen and (max-width: 620px) {
+  .content-title-position {
+    width: 100%; } }
+
+@media screen and (max-width: 550px) {
+  .title-my-name {
+    font-size: 50px;
+    padding: 15px; }
+  .content-title-position .title-position {
+    font-size: 20px; }
+  footer .container-footer .footer-body .redes-sociales {
+    flex-wrap: wrap; } }
 
 @media screen and (max-width: 378px) {
   footer .container-footer .footer-body {
