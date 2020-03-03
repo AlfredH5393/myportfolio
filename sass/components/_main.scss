@@ -104,27 +104,40 @@
 
 }
 .my-card-2 {
+  
   width: 30%;
-  height: auto;
+  // height: 240px;
+  display:flex;
+  flex-direction: column;
+  
   background: rgba(246, 253, 255, 0.973);
-  margin: 10px;
+  margin: 20px 0px;
   transition: 0.4s ease-in-out;
+  // margin-top: -50px;
 }
 
 .my-card-2 .content-my-card-2 img {
   display: block;
-  padding-top: 10px;
-  margin: 10px auto;
+  padding: 15px 0;
+  margin: 30px auto;
 }
 
 .my-card-2 .content-my-card-2 h6 {
   text-align: center;
-  display: block;
-  width: 100%;
+  width: 40%;
   background: #2c3e50;
   color: white;
-  padding: 15px;
+  padding: 8px 10px;
+  border-radius: 20px;
+  vertical-align: top;
   transition: 0.4s ease-in-out;
+  margin: -20px auto;
+
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right:0;
+  // bottom:50%
 
 }
 
