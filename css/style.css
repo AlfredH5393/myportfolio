@@ -12,26 +12,24 @@ header {
   background-repeat: none;
   background-size: cover;
   position: relative;
-  overflow: hidden;
-  z-index: 1000; }
-
-header::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 300px;
-  background: #fff;
-  clip-path: polygon(100% 50%, 0 100%, 100% 100%); }
+  overflow: hidden; }
 
 .menu {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: rows;
   justify-content: flex-end;
   margin: auto;
   align-items: center; }
+
+.logo {
+  margin: 10px;
+  padding: 5px 20px;
+  background: #fc6a35;
+  border-radius: 25px; }
+  .logo h2 {
+    color: #fff;
+    font-size: 25px; }
 
 .menu .btn-menu {
   display: none;
@@ -46,15 +44,30 @@ header::before {
 .menu .enlaces a {
   margin: 8px;
   text-decoration: none;
-  padding: 8px 10px;
+  padding: 5px 10px;
   color: white;
-  transition: 0.2s ease-in-out; }
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in; }
 
 .menu .enlaces a:hover {
-  border-radius: 20px;
-  background: #fff;
-  color: #000000;
+  border-bottom: 2px solid #fff;
   text-decoration: none; }
+
+.show-menu-btn, .hide-menu-btn {
+  transition: 0.4s;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  padding: 20px; }
+
+.show-menu-btn {
+  float: right; }
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111; }
 
 .title-my-name {
   display: block;
@@ -113,7 +126,30 @@ header .line {
   object-fit: cover;
   object-position: center center; }
 
-/*section my services*/
+.main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .main {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .main {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .main {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .main {
+    max-width: 1140px; } }
+
+/*------------------------section my services--------------------*/
 .my-card {
   flex: 1 1 auto;
   width: 300px;
@@ -342,6 +378,37 @@ footer .container-footer .footer-pie p {
 @media screen and (max-width: 1200px) {
   .sect-about .row .col-auto .text-about {
     width: 100%; } }
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    z-index: 1000;
+    transition: .7s;
+    padding: 80px 0; }
+  .menu .enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .menu .enlaces a {
+    text-align: center;
+    margin: 30px;
+    width: 20%; } }
+
+@media screen and (max-width: 800px) {
+  .show-menu-btn, .hide-menu-btn {
+    display: block; }
+  .hide-menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px; }
+  #chk:checked ~ .menu {
+    right: 0; } }
 
 @media screen and (max-width: 800px) {
   .my-card-2 {

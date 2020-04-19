@@ -30,7 +30,38 @@
   // transform: rotate(-90deg);
 }
 
-/*section my services*/
+.main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .main {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    max-width: 1140px;
+  }
+}
+/*------------------------section my services--------------------*/
 .my-card {
   flex: 1 1 auto;
   width: 300px;
