@@ -21,17 +21,26 @@
 </head>
 <body>
     <header>
-      <div class="content-button">
-        <a type="button" id="btn-hambuger"" class="btn-hambuger"> <i class="fa fa-bars fa-2x"></i></a>
-      </div>
-     
-      <nav class="full-menu">
-        <ul> 
-         <li><a href="index.html">Inicio</a></li>
-        <li><a href="works.html">Proyectos</a></li>
-        <li><a href="contact.html">contactame</a></li>
-       </ul>
-     </nav>
+      <input type="checkbox" id="chk">
+       <label for="chk" class="show-menu-btn">
+        <i class="fas fa-bars"></i>
+       </label>
+       <nav class="menu">
+         
+         <!-- <div class="logo">
+            <h2>Alfred / Design</h2>
+         </div> -->
+        
+        
+        <div class="enlaces">
+          <a href="index.html"> <i class="fa fa-home"></i> Inicio</a>
+          <a href="works.html"> <i class="fas fa-briefcase"></i> Proyectos</a>
+          <a href="contact.html"><i class="fas fa-id-card"></i> contactame</a>
+          <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-times"></i>
+          </label>
+         </div>
+       </nav>
         <h1 class="title-my-name">
           <strong>
             Proyectos
