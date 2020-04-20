@@ -298,7 +298,16 @@ header .line {
 .img-login {
   width: 100%; }
 
-.sect-contact .row .col-auto .contact-content {
+.content-social-contact {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.sect-contact {
+  padding: 20px; }
+
+.sect-contact .content-social-contact .social-contact .contact-content {
   margin: 10px auto;
   width: 520px;
   padding: 20px;
@@ -306,22 +315,22 @@ header .line {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px; }
 
-.sect-contact .row .col-auto .contact-content ul {
+.sect-contact .content-social-contact .social-contact .contact-content ul {
   list-style: none; }
 
-.sect-contact .row .col-auto .contact-content ul li {
+.sect-contact .content-social-contact .social-contact .contact-content ul li {
   padding: 8px; }
 
-.sect-contact .row .col-auto .contact-content ul li a {
+.sect-contact .content-social-contact .social-contact .contact-content ul li a {
   text-decoration: none;
   display: block;
   color: #353b48;
   transition: all .2s ease; }
-  .sect-contact .row .col-auto .contact-content ul li a i {
+  .sect-contact .content-social-contact .social-contact .contact-content ul li a i {
     font-size: 20px;
     padding-right: 10px; }
 
-.sect-contact .row .col-auto .contact-content ul li a:hover {
+.sect-contact .content-social-contact .social-contact .contact-content ul li a:hover {
   color: #ff7f50;
   font-size: 15px; }
 
@@ -375,6 +384,10 @@ footer .container-footer .footer-pie p {
 
 /*---------------------Responsive----------------------------------*/
 /*Parrafos de texto*/
+@media screen and (max-width: 1250px) {
+  .content-social-contact {
+    width: 100%; } }
+
 @media screen and (max-width: 1200px) {
   .sect-about .row .col-auto .text-about {
     width: 100%; } }
@@ -399,6 +412,18 @@ footer .container-footer .footer-pie p {
     text-align: center;
     margin: 30px;
     width: 20%; } }
+
+@media screen and (max-width: 590px) {
+  .menu .enlaces a {
+    text-align: center;
+    margin: 30px;
+    width: 30%; } }
+
+@media screen and (max-width: 458px) {
+  .menu .enlaces a {
+    text-align: center;
+    margin: 30px;
+    width: 40%; } }
 
 @media screen and (max-width: 800px) {
   .show-menu-btn, .hide-menu-btn {
@@ -435,6 +460,10 @@ footer .container-footer .footer-pie p {
     font-size: 20px; }
   footer .container-footer .footer-body .redes-sociales {
     flex-wrap: wrap; } }
+
+@media screen and (max-width: 560px) {
+  .footer-pie {
+    padding: 40px; } }
 
 @media screen and (max-width: 378px) {
   footer .container-footer .footer-body {
