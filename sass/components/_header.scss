@@ -162,15 +162,22 @@ header {
   color: #fff;
 }
 .content-title-position {
-  width: 40%;
-  margin: 0 auto;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 5px auto;
+  padding: 1px 0px;
+  background: #fc6a35;
+  border-radius: 30px;
 
   .title-position {
+    display: block;
+    padding-top: 7.5px;
     text-align: center;
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
+  
   }
 }
 

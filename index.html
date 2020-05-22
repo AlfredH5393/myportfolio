@@ -60,7 +60,7 @@
             Alfredo Hernández Pérez
           </strong>
         </h1>
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
         <div class="content-title-position">
           <h3 class="title-position">Desarrollador / Diseñador web</h3>
          </div>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="row">
-          <img src="img/20191211_163314.jpg" alt="" class="me" />
+          <img src="img/20191211_163314.jpg"  alt="" class="me" />
         </div>
       </section>
 
@@ -157,6 +157,18 @@
                 <p>
                   Tambien doy mantenimientos, actualizaciones y correciones a
                   sitio web, retoque de diseño etc.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto m-auto">
+            <div class="my-card">
+              <div class="content-my-card">
+                <img src="icons/039-maintenance.png" width="80px" alt="" />
+                <h6><strong>Desarrollo de Aplicaciones Móviles</strong></h6>
+                <p>
+                  Desarrollo aplicaciones móviles para Android / IOS con React-Native
                 </p>
               </div>
             </div>
@@ -258,6 +270,17 @@
             </div>
          </div>
 
+         <div class="my-card-2">
+          <div class="content-my-card-2">
+            <img
+              src="img/RN2.png"
+              alt=""
+              width="150"
+            />
+            <h6 class="bg-RN"><strong>React Native</strong></h6>
+          </div>
+       </div>
+
 
       </div>
       </section>
@@ -271,7 +294,8 @@
 
         <div class="linea"></div>
 
-        <div class="skill-box">
+        <canvas id="myChart"></canvas>
+        <!-- <div class="skill-box">
           <p>HTML5</p>
           <p>90%</p>
           <div class="skill">
@@ -341,7 +365,7 @@
           <div class="skill">
             <div class="skill-level" style="width: 46%;"></div>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <footer class="mt-5">
@@ -367,7 +391,7 @@
                   ><i class="fab fa-twitter fa-2x"></i
                 ></a>
 
-                <a href="https://www.instagram.com/alfredperez_a/?hl=es-la"
+                <a href="https://www.instagram.com/eltioalfredxd/?hl=es-la"
                 target="_blank" class="instagram"
                   ><i class="fab fa-instagram fa-2x"></i
                 ></a>
@@ -384,5 +408,43 @@
         </div>
       </footer>
     </div>
+
+    <!-- Script para chartJS -->
+    <script src="js//Chart.js"></script>
+    <script>
+     let ctx = document.getElementById("myChart").getContext("2d");
+     let myChart = new Chart(ctx,{
+       data:{
+         labels:['html','css','js','php','MySQL', 'jQuery','Vue js','Sass','Bootstrap'],
+         datasets:[{
+           label: 'Skills',
+           data:[90,68,55,40,60,50,40,46,36],
+           backgroundColor: [
+             'rgb(221, 81, 42, .7)',
+             'rgb(33, 150, 243, .7)',
+             'rgb(247, 224, 24, .7)',
+             'rgb(54, 68, 127, .7)',
+             'rgb(254, 166, 2, .7)',
+             'rgb(8, 104, 172, .7)',
+             'rgb(65, 184, 131, .7)',
+             'rgb(205, 102, 153, .7)',
+             'rgb(85, 59, 125, .7)'
+           ]
+         }]
+       },
+       type: 'polarArea',
+       options:{
+         scales:{
+           yAxes:[{
+                ticks: {
+                  beginAtZero: true
+                }
+           }]
+         }
+       }
+     });
+
+    </script>
+
   </body>
 </html>
