@@ -494,10 +494,12 @@ footer .container-footer .footer-pie p {
   .my-card {
     width: 100%;
     margin: 0 auto; }
-  .skill-box {
-    width: 100%; }
   .my-card-2 {
-    width: 100%; } }
+    width: 100%; }
+  .sect-about .foto {
+    margin-top: -200px; }
+  .sect-about h2 {
+    margin-top: 50px; } }
 
 @media screen and (max-width: 620px) {
   .content-title-position {
@@ -524,7 +526,7 @@ footer .container-footer .footer-pie p {
 
 @media screen and (max-width: 500px) {
   .sect-about h2 {
-    margin-top: 30px; } }
+    margin-top: 60px; } }
 
 @media screen and (max-width: 458px) {
   .menu .enlaces a {
