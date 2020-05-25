@@ -11,16 +11,30 @@ header {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  position: relative;
   overflow: hidden; }
+
+header::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 600px; }
 
 .menu {
   width: 100%;
   display: flex;
   flex-direction: rows;
-  justify-content: flex-end;
+  justify-content: center;
+  position: fixed;
   margin: auto;
-  align-items: center; }
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  padding-top: 8px;
+  padding-bottom: 8px; }
 
 .logo {
   margin: 10px;
@@ -62,7 +76,8 @@ header {
   padding: 20px; }
 
 .show-menu-btn {
-  float: right; }
+  float: right;
+  position: relative; }
 
 #chk {
   position: absolute;
@@ -71,6 +86,7 @@ header {
 
 .title-my-name {
   display: block;
+  position: relative;
   text-align: center;
   margin-top: 10%;
   line-height: 100px;
@@ -79,6 +95,7 @@ header {
 
 .content-title-position {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 30%;
@@ -103,17 +120,15 @@ header .line {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px; }
 
-.wrap {
-  width: 100%;
-  padding: 0;
-  margin: 0; }
-
 .linea {
-  width: 100%;
+  width: 10%;
   height: 5.5px;
   background: #ff7f50;
   border-radius: 10px;
   margin: 10px 0; }
+
+.sect-about {
+  padding-top: 50px; }
 
 .sect-about .row .col-auto .text-about {
   margin: 10px auto;
@@ -123,15 +138,23 @@ header .line {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px; }
 
-.me {
-  display: block;
-  width: 300px;
-  height: 300px;
+.sect-about .foto {
+  margin-top: -240px;
+  position: absolute;
+  left: 0;
+  right: 0; }
+
+.sect-about .foto .me {
+  vertical-align: top;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   display: block;
-  margin: 10px auto;
+  margin: 0px auto;
   object-fit: cover;
-  object-position: center center; }
+  object-position: center center;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px; }
 
 .main {
   width: 100%;
@@ -157,21 +180,31 @@ header .line {
     max-width: 1140px; } }
 
 /*------------------------section my services--------------------*/
+.content-my-card-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px; }
+
 .my-card {
   flex: 1 1 auto;
   width: 300px;
   height: 320px;
   background: rgba(246, 253, 255, 0.973);
-  margin: 10px;
-  border-radius: 15px;
-  transition: 0.4s ease-in-out; }
+  margin: 0px;
+  transition: 0.5s ease-in-out; }
 
 .my-card:hover {
+  transform: scale(1.1);
+  z-index: 2;
   background: #2c3e50;
   color: #ffffff;
-  -webkit-box-shadow: -9px 11px 15px -2px rgba(171, 171, 171, 0.75);
-  -moz-box-shadow: -9px 11px 15px -2px rgba(171, 171, 171, 0.75);
-  box-shadow: -9px 11px 15px -2px rgba(171, 171, 171, 0.75); }
+  -webkit-box-shadow: 0px 0px 15px rgba(171, 171, 171, 0.75);
+  -moz-box-shadow: 0px 0px 15px rgba(171, 171, 171, 0.75);
+  box-shadow: 0px 0px 15px rgba(171, 171, 171, 0.75);
+  border-radius: 15px; }
   .my-card:hover .content-my-card h6 {
     background: #ffffff;
     color: #000000; }
@@ -247,9 +280,9 @@ header .line {
 .my-card-2:hover {
   background: #2c3e50;
   color: #ffffff;
-  -webkit-box-shadow: -9px 11px 15px -2px rgba(171, 171, 171, 0.75);
-  -moz-box-shadow: -9px 11px 15px -2px rgba(171, 171, 171, 0.75);
-  box-shadow: -9px 11px 15px -2px rgba(171, 171, 171, 0.75); }
+  -webkit-box-shadow: 0px 0px 15px rgba(171, 171, 171, 0.75);
+  -moz-box-shadow: 0px 0px 15px rgba(171, 171, 171, 0.75);
+  box-shadow: 0px 0px 15px rgba(171, 171, 171, 0.75); }
   .my-card-2:hover .content-my-card-2 .bg-html {
     background: #dd512a; }
   .my-card-2:hover .content-my-card-2 .bg-css {
