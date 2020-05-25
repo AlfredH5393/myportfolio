@@ -88,8 +88,8 @@ header::before {
   display: block;
   position: relative;
   text-align: center;
-  margin-top: 10%;
-  line-height: 100px;
+  margin-top: 13%;
+  line-height: 70px;
   font-size: 80px;
   color: #fff; }
 
@@ -489,6 +489,8 @@ footer .container-footer .footer-pie p {
     width: 70%; } }
 
 @media screen and (max-width: 767px) {
+  .title-my-name {
+    margin-top: 25%; }
   .my-card {
     width: 100%;
     margin: 0 auto; }
@@ -514,11 +516,15 @@ footer .container-footer .footer-pie p {
 @media screen and (max-width: 550px) {
   .title-my-name {
     font-size: 50px;
-    padding: 15px; }
+    padding: 10 15px; }
   .content-title-position .title-position {
     font-size: 20px; }
   footer .container-footer .footer-body .redes-sociales {
     flex-wrap: wrap; } }
+
+@media screen and (max-width: 500px) {
+  .sect-about h2 {
+    margin-top: 30px; } }
 
 @media screen and (max-width: 458px) {
   .menu .enlaces a {
