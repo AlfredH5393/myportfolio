@@ -4,12 +4,59 @@
 //   margin: 0;
 //   background-color: #ebebeb;
 // }
+.bg-html {
+  background: #dd512a;
+}
+.bg-css {
+  background: #2196f3;
+}
+.bg-js {
+  background: #f7e018;
+}
+.bg-sass {
+  background: #cd6699;
+  
+}
+.bg-jq {
+  background: #0868ac;
+  
+}
+.bg-vue {
+  background: #41b883;
+  
+}
+.bg-php {
+  background: #36447f; 
+}
+
+.bg-mq {
+  background: #fea602;
+}
+.bg-boostrap {
+  background: #553b7d;
+}
+.bg-RN {
+  background: #00d8ff;
+}
+
+
 .linea {
-  width: 10%;
+  width: 11%;
   height: 5.5px;
   background: #ff7f50;
   border-radius: 10px;
   margin: 10px 0;
+}
+
+.linea::after {
+  content: '';
+  position: absolute;
+  width: 5.5%;
+  height: 5.5px;
+  background: #ff7f50;
+  border-radius: 10px;
+  margin: 15px 0;
+  
 }
 
 .sect-about {
@@ -130,6 +177,92 @@
   text-align: center;
 }
 
+/*-------------------Section proyectos----------------*/
+// .sect-my-proyects{
+//   margin-bottom: 68%;
+// }
+.option-filter{
+  display: flex;
+  justify-content: center;
+}
+
+.option-filter ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+}
+
+#filter-list{
+  display: flex;
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  padding: 1px;
+  margin: 0 0 60px;
+}
+.option-filter ul li {
+ padding: 6px 20px;
+ margin: 6px 5px;
+ color: #888888;
+ line-height: 30px;
+ cursor: pointer;
+ -webkit-transition: all 0.3s ease-in-out;
+ -ms-transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+ border-radius: 30px;
+ font-size: 16px;
+ font-weight: 500;
+ min-width: 130px;
+}
+
+#filter-list li.active,
+#filter-list li:hover{
+  background-color: rgb(86, 108, 255) ;
+  color: white;
+}
+
+.content-card-proyect {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+  
+}
+.card-proyect {
+ width: 28.6%;
+ -webkit-box-shadow: 0px 0px 15px  rgba(171, 171, 171, 0.75);
+  -moz-box-shadow: 0px 0px 15px  rgba(171, 171, 171, 0.75);
+ box-shadow: 0px 0px 15px  rgba(171, 171, 171, 0.75);
+ border-radius: 15px;
+ margin: 15px 20px;
+ img {
+   width: 100%;
+   height: 170px;
+   border-bottom: 5px solid rgb(86, 108, 255);
+ }
+ figcaption{
+  margin: 5px;
+  padding: 8px;
+
+  h3{
+    font-weight: bold;
+  }
+
+  .content-tag-useTec{
+    text-align: right;
+    span{
+      display: inline-block;
+      padding: 2px 9px;
+      color: white;
+      font-weight: bold;
+      font-size: 11px;
+    }
+  }
+ }
+}
+
+
 /*-------------------Section tecnologys--------------*/
 .sect-tecnologys{
     background-image: url('../img/sect-tecnoligys3.jpg');
@@ -189,11 +322,6 @@
   transition: 0.4s ease-in-out;
   margin: -20px auto;
 
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // right:0;
-  // bottom:50%
 
 }
 
@@ -240,36 +368,3 @@
   }
 }
 
-/*Skill section
-*/
-
-.skill-box {
-  box-sizing: border-box;
-  width: 60%;
-  margin: 10px auto;
-}
-
-.skill-box p {
-  text-transform: uppercase;
-  margin: 0 0 10px;
-  padding: 0;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-.skill-box p:nth-child(2) {
-  float: right;
-  position: relative;
-  top: -35px;
-}
-.skill {
-  padding: 4px;
-  box-sizing: border-box;
-  border: 2px solid #1abc9c;
-  border-radius: 10px;
-}
-.skill-level {
-  background: #34495e;
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
-}

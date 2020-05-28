@@ -15,9 +15,7 @@
 
     <!---------------------- Script de Boostrap y jquery ------------------------->
     <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   </head>
   <body>
       <header>
@@ -78,7 +76,7 @@
           </strong>
         </h2>
         <div class="linea"></div>
-        <div class="row">
+        <div class="row mt-md-4">
           <div class="col-auto ">
             <div class="text-about">
               <p>
@@ -99,7 +97,7 @@
           <div class="col-auto ">
             <div class="text-about">
               <p>
-                Empecé como cualquier personas que decide aprender algo nuevo,
+                Empecé como cualquier persona que decide aprender algo nuevo,
                  buscando en libros, en algunas clases en la escuela, foros y
                  sobre todo práctica, cuando decidí que es lo que realmente quería
                  dedicarme pues me termine enamorando de los diseños que marcaban un
@@ -115,7 +113,7 @@
         
       </section>
 
-      <section class="container sect-my-services mt-5 mb-5">
+      <section class="container sect-my-services mt-md-5 ">
         <h2>
           <strong>
             Mis servicios
@@ -181,6 +179,98 @@
 
        </div>
       
+      </section>
+
+      <section class="container sect-my-proyects mt-md-5">
+        <h2>
+          <strong>
+            Mis proyectos
+          </strong>
+        </h2>
+        <div class="linea"></div>
+        
+        <div class="option-filter mt-md-4">
+          <ul id="filter-list">
+            <li class="filter active" data-filter=".todos" >Todos</li>
+            <li class="filter" data-filter=".si" >Sistemas informaticos</li>
+            <li class="filter" data-filter=".pagweb" >Páginas web</li>
+            <!-- <li class="filter" data-filter=".appmov" >Aplicaciones móviles </li> -->
+          </ul>
+        </div>
+
+        <div class="content-card-proyect">
+          <figure class="card-proyect si todos">
+            <img src="img/quickimg/QuickImage_2.png" alt="">
+            <figcaption>
+              <h3>QuickImage</h3>
+              <p>
+                QuickImage es una plataforma que almacena recusos fotograficos 
+                para que la gente pueda subir y descargarlos sin miedo a violar derechos de autor.
+              </p>
+              <div class="content-tag-useTec">
+                <span class="bg-html"> HTML</span>
+                <span class="bg-css"> CSS</span>
+                <span class="bg-vue"> VUE</span>
+                <span class="bg-php"> PHP</span>
+                <span class="bg-mq"> MySQL</span>
+                
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card-proyect pagweb todos">
+            <img src="img/toolcretion/ToolCreation_1.png" alt="">
+            <figcaption>
+              <h3>ToolCreation</h3>
+              <p>
+                ToolCreation es una plataforma online sobre cursos en linea, su principal objetico es que la educación 
+                no tenga limites y pueda llegar a cualquier parte del mundo.
+              </p>
+              <div class="content-tag-useTec">
+                <span class="bg-html"> HTML</span>
+                <span class="bg-css"> CSS</span>
+                <span class="bg-jq"> Jquery</span>
+                <span class="bg-php"> PHP</span>
+                <span class="bg-mq"> MySQL</span>
+                <span class="bg-sass"> SASS</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card-proyect si todos">
+            <img src="img/othli/Othli_2.png" alt="">
+            <figcaption>
+              <h3>Ohtli Web Adminitrador</h3>
+              <p>
+               Ohtli es la parte administrativa de Ohtli móvil, este proyecto esta enfocado en dar un servicio de guía turistica.
+              </p>
+              <div class="content-tag-useTec">
+                <span class="bg-html"> HTML</span>
+                <span class="bg-css"> CSS</span>
+                <span class="bg-vue"> VUE</span>
+                <span class="bg-php"> PHP</span>
+                <span class="bg-mq"> MySQL</span>
+                <span class="bg-sass"> SASS</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card-proyect pagweb todos">
+            <img src="img/login.png" alt="">
+            <figcaption>
+              <h3>login Design colors Gradients</h3>
+              <p>
+               Ohtli es la parte admiitrativa de Ohtli móvil, este proyecto esta enfocado en dar un servir como guía turistica.
+              </p>
+              <div class="content-tag-useTec">
+                <span class="bg-html"> HTML</span>
+                <span class="bg-css"> CSS</span>
+              </div>
+            </figcaption>
+          </figure>
+
+        </div>
+
       </section>
 
       <section class="sect-tecnologys  ">
@@ -286,9 +376,9 @@
           </strong>
         </h2>
 
-        <div class="linea"></div>
+        <div class="linea mb-md-4"></div>
 
-        <canvas id="myChart" width="150" height="150"></canvas>
+        <canvas id="myChart" class=" width="150" height="150"></canvas>
         <!-- <div class="skill-box">
           <p>HTML5</p>
           <p>90%</p>
@@ -377,6 +467,27 @@
        }
      });
 
+    </script>
+    <script>
+      $('.content-card-proyect').isotope({
+        // options
+        itemSelector: '.card-proyect',
+        layoutMode: 'fitRows'
+      });
+
+      $(".option-filter ul li").click(function(){
+        $(".option-filter ul li").removeClass("active");
+        $(this).addClass("active")
+
+        var selector = $(this).attr("data-filter");
+        $(".content-card-proyect").isotope({
+            filter: selector
+         });
+
+         return false;
+      });
+
+      
     </script>
 
   </body>
