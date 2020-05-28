@@ -1,22 +1,27 @@
+.sect-contact{
+    padding: 20px;
+    // margin: 100px;
+}
 .content-social-contact {
     margin: 20px;
     display: flex;
     // align-items: center;
-    // justify-content: center;
+    justify-content: flex-start;
     // align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     // background: #333;
 
 }
-.sect-contact{
-    padding: 20px;
-    // margin: 100px;
+
+.sect-contact .content-social-contact .social-contact{
+   width: 40%;
+   margin-top: 20px;
 }
 
 .sect-contact .content-social-contact .social-contact .contact-content {
     margin: 10px auto;
-    width: 520px;
+    width: 100%;
     padding: 20px;
     border-left: 4px solid #34495e;
     border-top-left-radius: 5px;

@@ -18,6 +18,24 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1080px) {
+  .content-card-proyect
+  {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .card-proyect{
+    width: 45%;
+    margin: 15px 15px;
+     img{
+       height: 40%;
+     }
+    }
+   
+}
+
 @media screen and(max-width:987px) {
   .content-title-position {
     width: 45%;
@@ -73,6 +91,9 @@
 @media screen and (max-width: 800px) {
   .my-card-2 {
     width: 45%;
+  }
+  .sect-contact .content-social-contact .social-contact{
+  width: 100%;
   }
 }
 @media screen and(max-width:780px) {
@@ -174,6 +195,18 @@
     text-align: center;
     margin: 30px;
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  #filter-list{
+    flex-direction: column;
+  }
+  .option-filter ul li{
+    padding: 5px 7px;
+    margin: 5px 5px;
+    color: #888888;
+    line-height: 20px;
   }
 }
 
