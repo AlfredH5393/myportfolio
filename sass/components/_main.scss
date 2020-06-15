@@ -62,13 +62,17 @@
 .sect-about {
   padding-top: 50px;
 }
-.sect-about .row .col-auto .text-about {
-  margin: 10px auto;
-  width: 520px;
-  padding: 20px;
-  border-left: 4px solid #34495e;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+.sect-about  .text-about {
+    margin: 10px auto;
+    width: 85%;
+    padding: 20px;
+    // border-left: 4px solid #34495e;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  p{
+    text-align: center;
+    line-height: 30px;
+  }
 }
 .sect-about .foto{
   margin-top: -240px;

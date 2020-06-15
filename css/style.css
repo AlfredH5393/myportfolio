@@ -101,8 +101,7 @@ header::before {
   width: 30%;
   margin: 5px auto;
   padding: 1px 0px;
-  background: #fc6a35;
-  border-radius: 30px; }
+  background: rgba(0, 0, 0, 0.5); }
   .content-title-position .title-position {
     display: block;
     padding-top: 7.5px;
@@ -169,13 +168,15 @@ header .line {
 .sect-about {
   padding-top: 50px; }
 
-.sect-about .row .col-auto .text-about {
+.sect-about .text-about {
   margin: 10px auto;
-  width: 520px;
+  width: 85%;
   padding: 20px;
-  border-left: 4px solid #34495e;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px; }
+  .sect-about .text-about p {
+    text-align: center;
+    line-height: 30px; }
 
 .sect-about .foto {
   margin-top: -240px;
